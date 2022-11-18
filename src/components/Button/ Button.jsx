@@ -1,11 +1,29 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 
-const Button = () => {
+export const Button = ({ type, content, size, disabled }) => {
 	return (
-		<div className="alert alert-primary">
-			A simple primary alert—check it out!
-		</div>
+		<>
+			<button
+				type="button"
+				className={`btn btn-${type} btn-${size}`}
+				disabled={disabled ? true : false}
+			>
+				{content}
+			</button>
+		</>
 	);
 };
 
-export default Button;
+Button.propTypes = {
+	type: PropTypes.oneOf([
+		"primary",
+		"success",
+		"danger",
+		"warning",
+		"dark",
+	]),
+	content: PropTypes.string.isRequired,
+	size: PropTypes.oneOf(["sm", "lg"]),
+	disabled: PropTypes.bool,
+};

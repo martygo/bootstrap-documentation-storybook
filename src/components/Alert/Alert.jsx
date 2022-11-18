@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 
 import Icon from "../Icon/Icon";
 
-const Alert = ({ type, message, icon }) => {
+export const Alert = ({ type, message, icon }) => {
 	return (
 		<>
 			<div className={`alert alert-${type}`}>
@@ -19,5 +19,3 @@ Alert.propTypes = {
 	message: PropTypes.string.isRequired,
 	icon: PropTypes.string,
 };
-
-export default Alert;

@@ -1,23 +1,23 @@
 import React from "react";
 
-import Alert from "../components/Alert/Alert";
+import { Alert } from "./Alert";
 
 export default {
-    title: "Alert",
-    component: Alert,
-}
+	title: "Alert",
+	component: Alert,
+};
 
 const Template = (args) => <Alert {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-    type: "primary",
-    message: "alert with boostrap",
-}
+	type: "primary",
+	message: "alert with boostrap",
+};
 
 export const Success = Template.bind({});
 Success.args = {
-    ...Primary.args,
+	...Primary.args,
 	type: "success",
 };
 

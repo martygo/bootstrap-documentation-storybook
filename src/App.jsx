@@ -1,14 +1,15 @@
-import React from "react"
+import React from "react";
 
-import Alert from "./components/Alert/Alert"
+import { Alert } from "./components/Alert/Alert";
+import { Button } from "./components/Button/ Button";
 
-function App () {
-  return (
+function App() {
+	return (
 		<>
-			<Alert type="primary" message="alert with boostrap" />
-			<Alert type="danger" message="alert with boostrap + icon" icon="check-circle"/>
+			<Alert type="primary" message="alert" />
+			<Button type="danger" content="button" />
 		</>
 	);
 }
 
-export default App
+export default App;
