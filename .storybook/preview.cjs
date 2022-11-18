@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 export const parameters = {
 	actions: { argTypesRegex: "^on[A-Z].*" },
 	html: {
 		prettier: {
-			tabWidth: 4,
+			tabWidth: 2,
 			useTabs: false,
 			htmlWhitespaceSensitivity: "strict",
 		},

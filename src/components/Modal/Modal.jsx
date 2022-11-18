@@ -1,11 +1,31 @@
 import React from "react";
+import { PropTypes } from "prop-types";
 
-const Modal = () => {
+export const Modal = ({ ...props }) => {
 	return (
-		<div className="alert alert-primary">
-			A simple primary alert—check it out!
-		</div>
+		<>
+			<button
+				type="button"
+				className="btn btn-primary"
+				data-bs-toggle="modal"
+				data-bs-target="#exampleModal"
+				onClick={props.onClick}
+			>
+				Launch modal
+			</button>
+			<div className="modal fade" tabIndex="-1" id="exampleModal">
+				<div className="modal-dialog">
+					<div className="modal-content">{props.children}</div>
+				</div>
+			</div>
+		</>
 	);
 };
 
-export default Modal;
+Modal.propTypes = {
+	show: PropTypes.bool,
+};
+
+Modal.defaultProps = {
+	show: false,
+}
