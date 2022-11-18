@@ -14,3 +14,9 @@ Primary.args = {
 	type: "primary",
 	content: "alert with boostrap",
 };
+
+export const Success = Template.bind({});
+Success.args = {
+    ...Primary.args,
+	type: "success",
+};
