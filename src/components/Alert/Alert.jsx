@@ -7,7 +7,7 @@ const Alert = ({ type, message, icon }) => {
 	return (
 		<>
 			<div className={`alert alert-${type}`}>
-				<Icon name={hello ? icon : ""} />
+				<Icon name={icon ? icon : ""} />
 				{message}
 			</div>
 		</>

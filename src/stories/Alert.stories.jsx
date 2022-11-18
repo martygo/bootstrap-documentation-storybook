@@ -32,3 +32,9 @@ Warning.args = {
 	...Primary.args,
 	type: "warning",
 };
+
+export const WithIcon = Template.bind({});
+WithIcon.args = {
+	...Primary.args,
+	icon: "check-circle-fill",
+};
