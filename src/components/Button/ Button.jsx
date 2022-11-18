@@ -22,6 +22,7 @@ Button.propTypes = {
 		"danger",
 		"warning",
 		"dark",
+		"link"
 	]),
 	content: PropTypes.string.isRequired,
 	size: PropTypes.oneOf(["sm", "lg"]),

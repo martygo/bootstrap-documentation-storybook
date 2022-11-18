@@ -20,3 +20,9 @@ Success.args = {
     ...Primary.args,
 	type: "success",
 };
+
+export const Link = Template.bind({});
+Link.args = {
+	...Primary.args,
+	type: "link",
+};
