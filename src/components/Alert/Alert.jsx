@@ -4,7 +4,6 @@ import { PropTypes } from "prop-types";
 import Icon from "../Icon/Icon";
 
 const Alert = ({ type, message, icon }) => {
-	let hello = "hello";
 	return (
 		<>
 			<div className={`alert alert-${type}`}>
