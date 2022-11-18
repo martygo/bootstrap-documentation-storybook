@@ -26,3 +26,10 @@ Link.args = {
 	...Primary.args,
 	type: "link",
 };
+
+export const Outline = Template.bind({});
+Outline.args = {
+	...Primary.args,
+	type: "outline",
+    borderColor: "primary",
+};
