@@ -4,7 +4,7 @@ import { PropTypes } from "prop-types";
 const Icon = ({ name }) => {
   return (
     <>
-        <i className={`bi bi-${name} me-2`}></i>
+        <i className={`bi bi-${name} me-2`}/>
     </>
   );
 }
