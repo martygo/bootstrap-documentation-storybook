@@ -1,5 +1,4 @@
 import React from "react";
-import { PropTypes } from "prop-types";
 
 export const Modal = ({ ...props }) => {
 	return (
@@ -21,11 +20,3 @@ export const Modal = ({ ...props }) => {
 		</>
 	);
 };
-
-Modal.propTypes = {
-	show: PropTypes.bool,
-};
-
-Modal.defaultProps = {
-	show: false,
-}
