@@ -3,6 +3,7 @@ import React from "react";
 import { Alert } from "./components/Alert/Alert";
 import { Button } from "./components/Button/ Button";
 import { Modal } from "./components/Modal/Modal";
+import { Pagination } from "./components/Pagination/Pagination";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Modal>
 				<Alert type="primary" message="alert" />
 			</Modal>
+			<Pagination/>
 		</>
 	);
 }
