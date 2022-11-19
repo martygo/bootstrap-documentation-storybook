@@ -15,7 +15,13 @@ export const Alert = ({ type, message, icon }) => {
 };
 
 Alert.propTypes = {
-	type: PropTypes.string.isRequired,
+	type: PropTypes.oneOf([
+		"primary",
+		"success",
+		"danger",
+		"warning",
+		"dark",
+	]),
 	message: PropTypes.string.isRequired,
 	icon: PropTypes.string,
 };
